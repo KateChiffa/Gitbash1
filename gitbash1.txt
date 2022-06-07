@@ -1,0 +1,81 @@
+1) Посмотреть где я
+$ pwd
+
+2) Создать папку
+$ mkdir group
+
+3) Зайти в папку
+$ cd group
+
+4) Создать 3 папки
+$ mkdir group1 group2 group3
+
+5) Зайти в любоую папку
+$ cd group3
+
+6) Создать 5 файлов (3 txt, 2 json)
+$ touch test1.txt test2.txt test3.txt test4.json test5.json
+
+7) Создать 3 папки
+$ mkdir podgroup1 podgroup2 podgroup3
+
+8. Вывести список содержимого папки
+$ ls -la
+
+9) + Открыть любой txt файл
+$ nano test1.txt
+
+10) + написать туда что-нибудь, любой текст.
+Hello
+
+11) + сохранить и выйти.
+-  Ctrl-o - enter - Ctrl-x
+
+12) Выйти из папки на уровень выше
+$ cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+$ mv test2.txt podgroup3/test2.txt (находясь в нужной папке)
+$ mv group3/test3.txt podgroup3/test3.txt (из папки, в которой мы не находимся)
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+$ cp test4.json podgroup3/test4.json
+$ cp group3/test4.json podgroup3/test4.json (из папки, в которой мы не находимся)
+
+15) Найти файл по имени
+$ find . -name "test3.txt"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+$ tail -f test3.txt
+
+17) вывести несколько первых строк из текстового файла
+$ head -n5 test3.txt
+
+18) вывести несколько последних строк из текстового файла
+$ tail -n6 test3.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+$ less test3.txt
+
+20) вывести дату и время
+$ date
+
+=========
+
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+Ryzen@Ryzen_5 MINGW64 ~
+$ curl  "http://162.55.220.72:5005/get_method?name='Chiffa'&age='34'"         
+    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    28  100    28    0     0    240      0 --:--:-- --:--:-- --:--:--   241[
+  "'Chiffa'",
+  "'34'"
+]
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+
